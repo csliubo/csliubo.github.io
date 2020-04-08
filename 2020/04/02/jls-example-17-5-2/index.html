@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://csliubo.github.io">
-  <title>Archives: 2020 | 胡言乱语</title>
+  <title>Java语言规范中的 Example 17.5-2 | 胡言乱语</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="胡言乱语">
-<meta property="og:url" content="https://csliubo.github.io/archives/2020/index.html">
+  <meta name="description" content="最近开始学习java中的多线程，在翻看jls(Java Language Specification)的时候发现了这个例子。 12&#x2F;&#x2F;thread 1Global.s &#x3D; &quot;&#x2F;tmp&#x2F;usr&quot;.substring(4);  123&#x2F;&#x2F; thread2String myS &#x3D; Global.s;if (myS.equals(&quot;&#x2F;tmp&quot;))System.out.println(myS);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java语言规范中的 Example 17.5-2">
+<meta property="og:url" content="https://csliubo.github.io/2020/04/02/jls-example-17-5-2/index.html">
 <meta property="og:site_name" content="胡言乱语">
+<meta property="og:description" content="最近开始学习java中的多线程，在翻看jls(Java Language Specification)的时候发现了这个例子。 12&#x2F;&#x2F;thread 1Global.s &#x3D; &quot;&#x2F;tmp&#x2F;usr&quot;.substring(4);  123&#x2F;&#x2F; thread2String myS &#x3D; Global.s;if (myS.equals(&quot;&#x2F;tmp&quot;))System.out.println(myS);">
+<meta property="article:published_time" content="2020-04-02T02:38:45.000Z">
+<meta property="article:modified_time" content="2020-04-08T08:55:03.848Z">
 <meta property="article:author" content="陈大白">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="胡言乱语" type="application/atom+xml">
@@ -155,84 +160,115 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jls-example-17-5-2" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/08/hello-world/" class="archive-article-date">
-        <time datetime="2020-04-08T08:55:03.848Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-08</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/08/hello-world/" target="_blank">为群晖 Download Station 写了一个小App</a>
   
+    <h1 class="article-title" itemprop="name">
+      Java语言规范中的 Example 17.5-2
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日常</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2020/04/02/jls-example-17-5-2/" class="archive-article-date">
         <time datetime="2020-04-02T02:38:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
 </a>
 
-        </div>
-    	 
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/02/jls-example-17-5-2/" target="_blank">Java语言规范中的 Example 17.5-2</a>
   
-    </h1>
-  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">993字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">5分</span>
+    </span>
+  </span>
+</div>
 
 
-        <div class="article-info info-on-right">
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>最近开始学习java中的多线程，在翻看jls(Java Language Specification)的时候发现了这个例子。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//thread 1</span></span><br><span class="line">Global.s = <span class="string">"/tmp/usr"</span>.substring(<span class="number">4</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// thread2</span></span><br><span class="line">String myS = Global.s;</span><br><span class="line"><span class="keyword">if</span> (myS.equals(<span class="string">"/tmp"</span>))System.out.println(myS);</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>thread2 有可能输出 /usr ，具体的解释就是String的构造函数有个offset字段，而这个字段不是final，导致线程2有可能会看到构造到一半的myS。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">myS.equals(<span class="string">"/tmp"</span>) <span class="comment">//此时myS构造了一半,offset = 0，count=4，所以 myS 的值为 /tmp</span></span><br><span class="line">System.out.println(myS); <span class="comment">//myS构造完成，offset = 4，count = 4，myS的值为 /usr</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你现在用的是jdk8或者jdk7的高版本，你看一下substring的实现，你会发现对应的String构造函数的成员变量只涉及到value，而且value是final修饰的。所以根本不会出现规范中所说的问题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> beginIndex)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (beginIndex &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(beginIndex);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> subLen = value.length - beginIndex;</span><br><span class="line">        <span class="keyword">if</span> (subLen &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(subLen);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> (beginIndex == <span class="number">0</span>) ? <span class="keyword">this</span> : <span class="keyword">new</span> String(value, beginIndex, subLen);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span> value[];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">String</span><span class="params">(<span class="keyword">char</span> value[], <span class="keyword">int</span> offset, <span class="keyword">int</span> count)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (offset &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(offset);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (count &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (count &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(count);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (offset &lt;= value.length) &#123;</span><br><span class="line">                <span class="keyword">this</span>.value = <span class="string">""</span>.value;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// Note: offset or count might be near -1&gt;&gt;&gt;1.</span></span><br><span class="line">        <span class="keyword">if</span> (offset &gt; value.length - count) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(offset + count);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.value = Arrays.copyOfRange(value, offset, offset+count);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>搜索一下，<a href="https://stackoverflow.com/questions/6638819/why-the-following-program-can-work-under-jls-spec-on-jvm-memory-model/6638890" target="_blank" rel="noopener">stackoverflow</a> 上也有人提了这个问题。<br>里面回答里贴出来的<a href="http://www.docjar.com/html/api/java/lang/String.java.html" target="_blank" rel="noopener">String代码</a>有一个内部构造函数是有offset跟count的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">644</span>       <span class="comment">// Package private constructor which shares value array for speed.</span></span><br><span class="line"><span class="number">645</span>       String(<span class="keyword">int</span> offset, <span class="keyword">int</span> count, <span class="keyword">char</span> value[]) &#123;</span><br><span class="line"><span class="number">646</span>           <span class="keyword">this</span>.value = value;</span><br><span class="line"><span class="number">647</span>           <span class="keyword">this</span>.offset = offset;</span><br><span class="line"><span class="number">648</span>           <span class="keyword">this</span>.count = count;</span><br><span class="line"><span class="number">649</span>       &#125;</span><br></pre></td></tr></table></figure>
+<p>而且这里的substring实现确实依赖了这个构造函数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1924</span>       <span class="function"><span class="keyword">public</span> String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> beginIndex)</span> </span>&#123;</span><br><span class="line"><span class="number">1925</span>           <span class="keyword">return</span> substring(beginIndex, count);</span><br><span class="line"><span class="number">1926</span>       &#125;</span><br><span class="line"><span class="number">1927</span>   </span><br><span class="line"><span class="number">1928</span>       <span class="comment">/**</span></span><br><span class="line"><span class="comment">1929        * Returns a new string that is a substring of this string. The</span></span><br><span class="line"><span class="comment">1930        * substring begins at the specified &lt;code&gt;beginIndex&lt;/code&gt; and</span></span><br><span class="line"><span class="comment">1931        * extends to the character at index &lt;code&gt;endIndex - 1&lt;/code&gt;.</span></span><br><span class="line"><span class="comment">1932        * Thus the length of the substring is &lt;code&gt;endIndex-beginIndex&lt;/code&gt;.</span></span><br><span class="line"><span class="comment">1933        * &lt;p&gt;</span></span><br><span class="line"><span class="comment">1934        * Examples:</span></span><br><span class="line"><span class="comment">1935        * &lt;blockquote&gt;&lt;pre&gt;</span></span><br><span class="line"><span class="comment">1936        * "hamburger".substring(4, 8) returns "urge"</span></span><br><span class="line"><span class="comment">1937        * "smiles".substring(1, 5) returns "mile"</span></span><br><span class="line"><span class="comment">1938        * &lt;/pre&gt;&lt;/blockquote&gt;</span></span><br><span class="line"><span class="comment">1939        *</span></span><br><span class="line"><span class="comment">1940        * <span class="doctag">@param</span>      beginIndex   the beginning index, inclusive.</span></span><br><span class="line"><span class="comment">1941        * <span class="doctag">@param</span>      endIndex     the ending index, exclusive.</span></span><br><span class="line"><span class="comment">1942        * <span class="doctag">@return</span>     the specified substring.</span></span><br><span class="line"><span class="comment">1943        * <span class="doctag">@exception</span>  IndexOutOfBoundsException  if the</span></span><br><span class="line"><span class="comment">1944        *             &lt;code&gt;beginIndex&lt;/code&gt; is negative, or</span></span><br><span class="line"><span class="comment">1945        *             &lt;code&gt;endIndex&lt;/code&gt; is larger than the length of</span></span><br><span class="line"><span class="comment">1946        *             this &lt;code&gt;String&lt;/code&gt; object, or</span></span><br><span class="line"><span class="comment">1947        *             &lt;code&gt;beginIndex&lt;/code&gt; is larger than</span></span><br><span class="line"><span class="comment">1948        *             &lt;code&gt;endIndex&lt;/code&gt;.</span></span><br><span class="line"><span class="comment">1949        */</span></span><br><span class="line"><span class="number">1950</span>       <span class="function"><span class="keyword">public</span> String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> beginIndex, <span class="keyword">int</span> endIndex)</span> </span>&#123;</span><br><span class="line"><span class="number">1951</span>           <span class="keyword">if</span> (beginIndex &lt; <span class="number">0</span>) &#123;</span><br><span class="line"><span class="number">1952</span>               <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(beginIndex);</span><br><span class="line"><span class="number">1953</span>           &#125;</span><br><span class="line"><span class="number">1954</span>           <span class="keyword">if</span> (endIndex &gt; count) &#123;</span><br><span class="line"><span class="number">1955</span>               <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(endIndex);</span><br><span class="line"><span class="number">1956</span>           &#125;</span><br><span class="line"><span class="number">1957</span>           <span class="keyword">if</span> (beginIndex &gt; endIndex) &#123;</span><br><span class="line"><span class="number">1958</span>               <span class="keyword">throw</span> <span class="keyword">new</span> StringIndexOutOfBoundsException(endIndex - beginIndex);</span><br><span class="line"><span class="number">1959</span>           &#125;</span><br><span class="line"><span class="number">1960</span>           <span class="keyword">return</span> ((beginIndex == <span class="number">0</span>) &amp;&amp; (endIndex == count)) ? <span class="keyword">this</span> :</span><br><span class="line"><span class="number">1961</span>               <span class="keyword">new</span> String(offset + beginIndex, endIndex - beginIndex, value);</span><br><span class="line"><span class="number">1962</span>       &#125;</span><br></pre></td></tr></table></figure>
+<p>再进一步看的话，你会发现offset跟count其实都是final修饰的，也就是这一段代码在多线程环境下也是不会出现规范里说的问题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">114</span>       <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span> value[];</span><br><span class="line"><span class="number">115</span>   </span><br><span class="line"><span class="number">116</span>       <span class="comment">/** The offset is the first index of the storage that is used. */</span></span><br><span class="line"><span class="number">117</span>       <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> offset;</span><br><span class="line"><span class="number">118</span>   </span><br><span class="line"><span class="number">119</span>       <span class="comment">/** The count is the number of characters in the String. */</span></span><br><span class="line"><span class="number">120</span>       <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> count;</span><br></pre></td></tr></table></figure>
+
+<p>当然，我认为jls这么举例，应该是之前的实现确实出现过这个问题，而最大的可能应该是1.5之前的版本。因为jsr133就是针对这些乱七八糟的情况提出来的嘛，并且在jdk1.5实现了。</p>
+<p>于是，我去搜了一下jdk1.4的代码，我在github上找到<a href="https://github.com/eagle518/jdk-source-code/" target="_blank" rel="noopener">这个仓库</a>。<br>这个仓库里的jdk1.4里的<a href="https://github.com/eagle518/jdk-source-code/blob/master/jdk1.4.2_src/java/lang/String.java" target="_blank" rel="noopener">String实现</a>里有这个构造方法，并且offset,count和value都不是final修饰的。也就是说在jdk1.4下，确实会存在jls所说的这个问题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/** The value is used for character storage. */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">char</span> value[];</span><br><span class="line"></span><br><span class="line">    <span class="comment">/** The offset is the first index of the storage that is used. */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> offset;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/** The count is the number of characters in the String. */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> count;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Package private constructor which shares value array for speed.</span></span><br><span class="line">    String(<span class="keyword">int</span> offset, <span class="keyword">int</span> count, <span class="keyword">char</span> value[]) &#123;</span><br><span class="line">	<span class="keyword">this</span>.value = value;</span><br><span class="line">	<span class="keyword">this</span>.offset = offset;</span><br><span class="line">	<span class="keyword">this</span>.count = count;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>ps. openjdk7里这个substring和String实现的修改是<a href="http://hg.openjdk.java.net/jdk7u/jdk7u/jdk/rev/e1c679a00712" target="_blank" rel="noopener">这次提交</a>变更的</p>
+
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          陈大白
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://csliubo.github.io/2020/04/02/jls-example-17-5-2/" title="Java语言规范中的 Example 17.5-2" target="_blank">https://csliubo.github.io/2020/04/02/jls-example-17-5-2/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -244,19 +280,111 @@
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://csliubo.github.io/2020/04/02/jls-example-17-5-2/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/04/08/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          为群晖 Download Station 写了一个小App
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -297,8 +425,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
