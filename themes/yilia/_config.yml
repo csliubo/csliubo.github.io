@@ -83,7 +83,7 @@ top: true
 # Miscellaneous
 # 百度统计
 baidu_analytics: ''
-google_analytics: 'UA-[167960894]-1'
+google_analytics: 'UA-167960894-1'
 
 # 网站图标
 favicon: /favicon.ico
