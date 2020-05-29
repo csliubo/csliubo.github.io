@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="胡言乱语">
 <meta property="og:description" content="最近开始学习java中的多线程，在翻看jls(Java Language Specification)的时候发现了这个例子。 12&#x2F;&#x2F;thread 1Global.s &#x3D; &quot;&#x2F;tmp&#x2F;usr&quot;.substring(4);  123&#x2F;&#x2F; thread2String myS &#x3D; Global.s;if (myS.equals(&quot;&#x2F;tmp&quot;))System.out.println(myS);">
 <meta property="article:published_time" content="2020-04-02T02:38:45.000Z">
-<meta property="article:modified_time" content="2020-04-08T08:57:47.260Z">
+<meta property="article:modified_time" content="2020-05-29T03:25:47.933Z">
 <meta property="article:author" content="陈大白">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -49,6 +49,19 @@
     }
   </style>
   
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-[167960894]-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
 
   
 
@@ -174,11 +187,6 @@
 
   
   
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
 <a href="/2020/04/02/jls-example-17-5-2/" class="archive-article-date">
         <time datetime="2020-04-02T02:38:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
 </a>
@@ -345,6 +353,15 @@
 
 <nav id="article-nav">
   
+    <a href="/2020/05/29/hashmap-infinite-loop/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HashMap中的死循环
+        
+      </div>
+    </a>
+  
   
     <a href="/2020/03/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">为群晖 Download Station 写了一个小App</div>
@@ -401,18 +418,6 @@
   </div>
   
   
-	<script src="/lib/busuanzi.pure.js"></script>
-	
-  
-  
-	
-	<span id="busuanzi_container_site_pv" style="display:none">
-		本站总访问量<span id="busuanzi_value_site_pv"></span>次	
-	        <span class="post-meta-divider" >|</span>
-	</span>
-  	<span id="busuanzi_container_site_uv" style='display:none'>
-  		本站访客数<span id="busuanzi_value_site_uv"></span>人
-  	</span>
   
 </footer>
 
@@ -488,11 +493,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
               </li>
             
             <div class="clearfix"></div>
