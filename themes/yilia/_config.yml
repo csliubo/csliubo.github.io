@@ -83,7 +83,7 @@ top: true
 # Miscellaneous
 # 百度统计
 baidu_analytics: ''
-google_analytics: ''
+google_analytics: 'UA-[167960894]-1'
 
 # 网站图标
 favicon: /favicon.ico
@@ -134,7 +134,7 @@ giteement:
 
 # 访问量统计功能(不蒜子)
 busuanzi:
-  enable: true
+  enable: false
   site_visit: true  # 站点访问量显示
   article_visit: true  # 文章访问量显示
 
